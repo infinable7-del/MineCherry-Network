@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecherry Server | Staff Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow--left"></div>
+  <div class="page-glow page-glow--right"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/cherry-logo.png" alt="Minecherry Server logo" /><span>Minecherry</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="play.html">Join</a><a href="rules.html">Rules</a><a href="team.html">Team</a><a href="ranks.html">Ranks</a><a href="updates.html">Updates</a><a href="gallery.html">Gallery</a><a href="community.html">Community</a><a href="faq.html">FAQ</a><a class="active" href="staff.html">Apply</a>
+    </nav>
+    <a class="nav-cta" href="https://discord.gg/ZP4bpFRrsg" target="_blank" rel="noreferrer">Join Discord</a>
+  </header>
+  <main>
+    <section class="section page-banner">
+      <div class="section-heading">
+        <p class="eyebrow">Staff Application</p>
+        <h2>Want to help run the community? Apply here.</h2>
+        <p class="section-copy">Minimum age is <strong>15+</strong>. Submitting this form opens Gmail with a ready-to-send application email.</p>
+      </div>
+      <div class="staff-layout">
+        <article class="panel panel--accent">
+          <h3>Before You Apply</h3>
+          <ul class="check-list">
+            <li>Be at least 15 years old</li>
+            <li>Be active in Discord and in-game</li>
+            <li>Be respectful and mature with players</li>
+            <li>Write a clear reason for applying</li>
+          </ul>
+        </article>
+        <form class="application-form panel" id="application-form">
+          <div class="field-row">
+            <label><span>Minecraft IGN</span><input id="username" name="username" type="text" placeholder="Notch" minlength="3" required /></label>
+            <label><span>Age</span><input id="age" name="age" type="number" placeholder="15" min="15" required /></label>
+          </div>
+          <label><span>Email Address</span><input id="email" name="email" type="email" placeholder="player@example.com" required /></label>
+          <label><span>Discord Tag</span><input id="discord" name="discord" type="text" placeholder="Username#1234 or @username" minlength="3" required /></label>
+          <label><span>Why do you want to be staff?</span><textarea id="reason" name="reason" placeholder="Share your experience, your timezone, and why you would be a good fit..." minlength="20" required></textarea></label>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+          <button class="button button--primary button--full" type="submit">Submit Application</button>
+          <p class="form-note">This opens Gmail with the application filled in and ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__brand"><img src="images/cherry-logo.png" alt="Minecherry logo small" /><div><strong>Minecherry Server</strong><p>playminecherry.aternos.me</p></div></div>
+    <div class="site-footer__links"><a href="team.html">Team</a><a href="faq.html">FAQ</a><a href="community.html">Community</a></div>
+    <p class="site-footer__legal">&copy; <span id="year"></span> Mine Cherry Network. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

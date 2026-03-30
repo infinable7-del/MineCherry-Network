@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecherry Server | Home</title>
+  <meta name="description" content="Minecherry Server home page with quick intro, server IP, and links to the full website sections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow--left"></div>
+  <div class="page-glow page-glow--right"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Minecherry home">
+      <img src="images/cherry-logo.png" alt="Minecherry Server logo" />
+      <span>Minecherry</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="play.html">Join</a>
+      <a href="rules.html">Rules</a>
+      <a href="team.html">Team</a>
+      <a href="ranks.html">Ranks</a>
+      <a href="updates.html">Updates</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="community.html">Community</a>
+      <a href="faq.html">FAQ</a>
+      <a href="staff.html">Apply</a>
+    </nav>
+
+    <a class="nav-cta" href="https://discord.gg/ZP4bpFRrsg" target="_blank" rel="noreferrer">Join Discord</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Java Edition Minecraft Server</p>
+        <h1>Minecherry is a bright survival community built for players who want more than a generic server.</h1>
+        <p class="hero__text">
+          Start here for the essentials, then explore the rest of the site for server info, rules, updates, ranks, gallery pages, and staff applications.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="play.html">Start Playing</a>
+          <a class="button button--ghost" href="staff.html">Apply for Staff</a>
+        </div>
+
+        <div class="stat-strip">
+          <article class="stat-pill">
+            <span class="stat-pill__number">Survival</span>
+            <span class="stat-pill__label">Community-first progression</span>
+          </article>
+          <article class="stat-pill">
+            <span class="stat-pill__number">Events</span>
+            <span class="stat-pill__label">Tournaments, quizzes, festivals</span>
+          </article>
+          <article class="stat-pill">
+            <span class="stat-pill__number">15+</span>
+            <span class="stat-pill__label">Staff age requirement</span>
+          </article>
+        </div>
+
+        <div class="server-card">
+          <p class="server-card__label">Server IP</p>
+          <div class="server-card__row">
+            <code id="server-ip">playminecherry.aternos.me</code>
+            <button id="copy-ip" type="button">Copy IP</button>
+          </div>
+          <p class="server-card__status" id="copy-status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__badge">Fantasy Survival Community</div>
+        <div class="scene-orbit">
+          <span class="scene-orbit__leaf"></span>
+          <span class="scene-orbit__spark"></span>
+          <span class="scene-orbit__spark scene-orbit__spark--two"></span>
+        </div>
+        <img src="images/cherry-logo.png" alt="Minecherry Server artwork" />
+        <div class="visual-cards">
+          <article class="visual-card">
+            <strong>Server IP Ready</strong>
+            <span>Copy the IP and jump into Minecherry in a few clicks.</span>
+          </article>
+          <article class="visual-card">
+            <strong>Community First</strong>
+            <span>Explore events, gallery pages, updates, and social spaces.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Quick Access</p>
+        <h2>Use the homepage for essentials, then dive deeper through the dedicated pages.</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <a class="panel panel--link" href="about.html">
+          <h3>About The Server</h3>
+          <p>Read what Minecherry is, its theme, and why players enjoy it.</p>
+        </a>
+        <a class="panel panel--link" href="play.html">
+          <h3>Join / Play</h3>
+          <p>Get the server IP, join instructions, and server status information.</p>
+        </a>
+        <a class="panel panel--link" href="rules.html">
+          <h3>Rules</h3>
+          <p>See the core guidelines before jumping into the world.</p>
+        </a>
+        <a class="panel panel--link" href="updates.html">
+          <h3>Updates & Events</h3>
+          <p>Follow patch notes, tournaments, and hall of fame highlights.</p>
+        </a>
+        <a class="panel panel--link" href="gallery.html">
+          <h3>Gallery</h3>
+          <p>Browse build showcases, event visuals, and fan art style sections.</p>
+        </a>
+        <a class="panel panel--link" href="staff.html">
+          <h3>Staff Application</h3>
+          <p>Apply for staff through the Gmail-ready application page.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__brand">
+      <img src="images/cherry-logo.png" alt="Minecherry logo small" />
+      <div>
+        <strong>Minecherry Server</strong>
+        <p>playminecherry.aternos.me</p>
+      </div>
+    </div>
+
+    <div class="site-footer__links">
+      <a href="updates.html">Updates</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="community.html">Community</a>
+      <a href="staff.html">Staff</a>
+    </div>
+
+    <p class="site-footer__legal">&copy; <span id="year"></span> Mine Cherry Network. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
